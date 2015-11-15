@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= templates/head.html
+    <title>Шина-сервис Владимир</title>
+</head>
+<body>
+<div class="container">
+    //= templates/header.html
+    <div class="slider-wrap clearfix">
+        <div class="slider-pager">
+            <a href="" data-slide-index="0">Шины мишлен стали доступнее, спешите приобрести, только у нас!</a>
+            <a href="" data-slide-index="1">Шины мишлен стали доступнее, спешите приобрести, только у нас!</a>
+            <a href="" data-slide-index="2">Шины мишлен стали доступнее, спешите приобрести, только у нас!</a>
+            <a href="" data-slide-index="3">Шины мишлен стали доступнее, спешите приобрести, только у нас!</a>
+        </div>
+        <div class="slider">
+            <ul id="slider">
+                <li><div class="slide-img" data-slide="1"></div></li>
+                <li><div class="slide-img" data-slide="2"></div></li>
+                <li><div class="slide-img" data-slide="3"></div></li>
+                <li><div class="slide-img" data-slide="4"></div></li>
+            </ul>
+        </div>
+    </div>
+    <section class="filter clearfix">
+        <div class="filter-title">
+            <h2>Быстрый фильтр товаров:</h2>
+        </div>
+        <div class="filter-fast">
+            <div class="filter-fast-col">
+                <a href=""><img src="images/wheel1.jpg" alt="" width="50" height="51">Легковые</a>
+            </div>
+            <div class="filter-fast-col">
+                <a href=""><img src="images/wheel2.jpg" alt="" width="43" height="51">Мото</a>
+            </div>
+            <div class="filter-fast-col">
+                <a href=""><img src="images/wheel3.jpg" alt="" width="50" height="51">Грузовые</a>
+            </div>
+            <div class="filter-fast-col">
+                <a href=""><img src="images/wheel4.jpg" alt="" width="50" height="51">С/Х шины</a>
+            </div>
+            <div class="filter-fast-col">
+                <a href=""><img src="images/wheel5.jpg" alt="" width="50" height="51">КГШ и ИНД</a>
+            </div>
+        </div>
+        <div class="filter-form-wrap">
+            <form id="filter-form">
+                <div class="filter-radio">
+                    <input type="radio" name="filter-type" id="filter-auto">
+                    <label for="filter-auto">По автомобилю</label>
+                    <input type="radio" name="filter-type" id="filter-param" checked="checked">
+                    <label for="filter-param">По параметрам</label>
+                    <input type="radio" name="filter-type" id="filter-disk">
+                    <label for="filter-disk">По дискам</label>
+                </div>
+                <div class="filter-params clearfix">
+                    <div class="filter-maker filter-select dropdown">
+                        <button type="button" class="btn btn-default btn-dropdown dropdown-toggle" id="filter-maker" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Выберите производителя</button>
+                        <ul class="dropdown-menu" aria-labelledby="filter-maker">
+                            <li><a href="#">Pirelli</a></li>
+                            <li><a href="#">Michelin</a></li>
+                            <li><a href="#">Nokian</a></li>
+                            <li><a href="#">Goodyear</a></li>
+                            <li><a href="#">Белшина</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-select filter-size dropdown">
+                        <button type="button" class="btn btn-default btn-dropdown dropdown-toggle" id="filter-width" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ширина</button>
+                        <ul class="dropdown-menu" aria-labelledby="filter-width">
+                            <li><a href="#">Pirelli</a></li>
+                            <li><a href="#">Michelin</a></li>
+                            <li><a href="#">Nokian</a></li>
+                            <li><a href="#">Goodyear</a></li>
+                            <li><a href="#">Белшина</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-select filter-size dropdown">
+                        <button type="button" class="btn btn-default btn-dropdown dropdown-toggle" id="filter-height" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Высота</button>
+                        <ul class="dropdown-menu" aria-labelledby="filter-height">
+                            <li><a href="#">Pirelli</a></li>
+                            <li><a href="#">Michelin</a></li>
+                            <li><a href="#">Nokian</a></li>
+                            <li><a href="#">Goodyear</a></li>
+                            <li><a href="#">Белшина</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-select filter-size dropdown">
+                        <button type="button" class="btn btn-default btn-dropdown dropdown-toggle" id="filter-diameter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Диаметр</button>
+                        <ul class="dropdown-menu" aria-labelledby="filter-diameter">
+                            <li><a href="#">Pirelli</a></li>
+                            <li><a href="#">Michelin</a></li>
+                            <li><a href="#">Nokian</a></li>
+                            <li><a href="#">Goodyear</a></li>
+                            <li><a href="#">Белшина</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-check clearfix">
+                    <div class="filter-select filter-season dropdown">
+                        <button type="button" class="btn btn-default btn-dropdown dropdown-toggle" id="filter-season" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Укажите сезон</button>
+                        <ul class="dropdown-menu" aria-labelledby="filter-season">
+                            <li><a href="#">Pirelli</a></li>
+                            <li><a href="#">Michelin</a></li>
+                            <li><a href="#">Nokian</a></li>
+                            <li><a href="#">Goodyear</a></li>
+                            <li><a href="#">Белшина</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-checkbox clearfix">
+                        <input type="checkbox" name="checkbox" id="check1">
+                        <label for="check1">Шипы</label>
+                        <input type="checkbox" name="checkbox" id="check2" checked="checked">
+                        <label for="check2">Без шипов</label>
+                        <input type="checkbox" name="checkbox" id="check3">
+                        <label for="check3">Все</label>
+                    </div>
+                    <button type="submit" class="filter-submit">Искать</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="catalog">
+        <header class="catalog-header">
+            <h2>Главная / акции</h2>
+            <div class="catalog-sort dropdown">
+                <button type="button" class="btn btn-default btn-dropdown dropdown-toggle" id="catalog-sort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">названию</button>
+                <ul class="dropdown-menu" aria-labelledby="catalog-sort">
+                    <li><a href="#">названию</a></li>
+                    <li><a href="#">цене</a></li>
+                    <li><a href="#">популярности</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="catalog-wrap">
+            <div class="catalog-item" data-season="summer">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+            <div class="catalog-item" data-season="winter">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+            <div class="catalog-item" data-season="all">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+            <div class="catalog-item" data-season="summer">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+            <div class="catalog-item" data-season="spikes">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+            <div class="catalog-item" data-season="winter">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+            <div class="catalog-item" data-season="all">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+            <div class="catalog-item" data-season="winter">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+            <div class="catalog-item" data-season="all">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+            <div class="catalog-item" data-season="spikes">
+                <img src="images/tire.jpg" alt="" width="184" height="270">
+                <a href="">YOKOHAMA Geolandar I/T-S G073 285/45R22 114Q</a>
+                <p>20 810 руб.</p>
+                <a href="" class="action">Купить</a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <h2>О компании «Шина-сервис Владимир»</h2>
+        <p>Компания «Шина-сервис Владимир» является лидером по продаже и сервисному обслуживанию грузовых шин на территории Владимирской области. Сегодня в нашей компании работает более 60 сотрудников, мы имеем в своем распоряжении 5 грузовых шинных центра, два из которых являются участниками партнёрской программы «Michelin TyrePlus».
+        </p>
+        <p>Все шинные центры имеют в своем распоряжении самое современное оборудование и квалифицированный персонал, проходящий периодическое обучение и знакомство с новыми технологиями ремонта шин. В 2011 году открыт профессиональный технический центр по ремонту грузовой техники, основным направлением которого является проверка, ремонт и регулировка подвески автомобиля, где используется новейшее оборудование фирмы JOSAM, Швеция. </p>
+        <p>На складах компаний огромный выбор грузовых шин, дисков, и автозапчастей различных производителей. Новым направлением компании является оказание услуг по ремонту и продаже сельскохозяйственных и крупногабаритных шин. Клиентами компании являются автотранспортные предприятия Владимира и области. Работа в дружном коллективе компании «Шина-сервис Владимир» открывает перспективы профессионального и карьерного роста, стабильного заработка и личного развития.</p>
+    </section>
+    //= templates/footer.html
+</body>
+</html>
